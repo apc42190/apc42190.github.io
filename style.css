@@ -101,12 +101,13 @@ div.view-my-stuff button a:visited {
 @media (min-width: 850px) {
     .hola {
         font-size: 175px;
-        font-size: 175px;
+        line-height: 175px;
     }
 }
 
 @media (min-width: 1200px) {
     .hola {
         font-size: 200px;
+        line-height: 200px;
     }
 }
