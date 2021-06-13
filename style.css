@@ -1,9 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     background-color: #E7C373;
-    font-family: "Strait", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
+    src: url("fonts/BebasNeue-Regular.ttf") format("ttf");
     color: #3A405A;
     font-weight: bold;
     margin-bottom: 0;
+}
+
+.index {
     overflow: hidden;
 }
 
@@ -28,11 +38,11 @@ li {
 
 .hola {
     font-size: 350px;
+    line-height: 175px;
     font-weight: 800;
-    line-height: 350px;
-    position: absolute;
-    top: 65%;
-    right: 0%;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
     margin: 0;
 }
 
@@ -61,6 +71,7 @@ div.view-my-stuff button {
     padding: 10px;
     margin-left: 5px;
     margin-right: 10px;
+    margin-top: 30px;
     border: none;
     text-align: center;
     text-decoration: none;
@@ -84,4 +95,17 @@ div.view-my-stuff button a:visited {
     background-color: #202332;
     color: #EDD497;
     text-decoration: none;
+}
+
+@media (min-width: 850px) {
+    .hola {
+        font-size: 175px;
+        font-size: 175px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hola {
+        font-size: 200px;
+    }
 }
