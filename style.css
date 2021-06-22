@@ -12,17 +12,23 @@ html {
     color: #3A405A;
     font-weight: bold;
     margin-bottom: 0;
+    width: 100%;
 }
 
 .index {
     overflow: hidden;
 }
 
+body {
+    min-width: fit-content;
+    margin: 0;
+}
+
 img {
     width: 2%;
 }
 
-nav a {
+a, a:visited {
     color: #3A405A;
     text-decoration: none;
 }
@@ -38,15 +44,22 @@ h2 {
 }
 
 footer {
-    position: absolute;
+    background-color: #3A405A;
+    color: #E7C373;
+    position: fixed;
     bottom: 0;
-    font-size: 3em;
-    margin-left: 50px;
+    text-align: center;
+    font-size: 1.5em;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 footer span a img{
-    width: 10%;
+    width: 5%;
     margin-left: 50px;
+    margin-right: 50px;
 }
 
 .left-side h2 {
@@ -61,6 +74,7 @@ footer span a img{
     text-align: center;
     font-size: 1000%;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .left-side {
@@ -69,6 +83,7 @@ footer span a img{
 
 .right-side {
     float: right;
+    margin-right: 0;
 }
 
 .left-project {
@@ -133,30 +148,21 @@ button:active {
     color: #EDD497;
 }
 
-button a {
-   text-decoration: none;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .left-project {
+        display: inline-block;
+        float: none;
+    }
+
+    .right-project {
+        display: inline-block;
+        float: none;
+    }
 }
 
-button a:visited {
-    background-color: #202332;
-    color: #EDD497;
-    text-decoration: none;
-}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 
-@media (min-width: 320px) {
-    .left-side {
-        text-align: center;
-    }
-    
-    .right-side {
-        text-align: center;
-    }
-    
-    .left-side li {
-        display: block;    
-    }
-    
-    .right-dise li {
-        display: block;    
-    }
 }
