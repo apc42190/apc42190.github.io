@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 html {
@@ -11,17 +11,8 @@ html {
     src: url("fonts/BebasNeue-Regular.ttf") format("ttf");
     color: #3A405A;
     font-weight: bold;
-    margin-bottom: 0;
     width: 100%;
-}
-
-.index {
-    overflow: hidden;
-}
-
-body {
-    min-width: fit-content;
-    margin: 0;
+    height: 100%
 }
 
 img {
@@ -37,10 +28,6 @@ li {
     float: right;
     list-style-type: none;
     padding: 10px;
-}
-
-h2 {
-    font-size: 5em;
 }
 
 footer {
@@ -60,66 +47,6 @@ footer span a img{
     width: 5%;
     margin-left: 50px;
     margin-right: 50px;
-}
-
-.left-side h2 {
-    margin-left: 130px;
-}
-
-.right-side h2 {
-    margin-right: 130px;
-}
-
-.projects {
-    text-align: center;
-    font-size: 1000%;
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-
-.left-side {
-    float: left;
-}
-
-.right-side {
-    float: right;
-    margin-right: 0;
-}
-
-.left-project {
-    float: left;
-    margin-left: 120px;
-
-}
-
-.right-project {
-    float: right;
-    margin-right: 130px;
-}
-
-.hola {
-    font-size: 350px;
-    line-height: 350px;
-    font-weight: 800;
-    position: fixed;
-    bottom: 5px;
-    right: 5px;
-    margin: 0;
-}
-
-.space {
-    margin-top: 300px;
-}
-
-.intro {
-    font-size: 40px;
-    position: relative;
-    right: -5%;
-}
-
-.view-my-stuff {
-    margin-left: 7%;
-    padding: 10px;
 }
 
 button {
@@ -148,21 +75,47 @@ button:active {
     color: #EDD497;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-    .left-project {
-        display: inline-block;
-        float: none;
-    }
-
-    .right-project {
-        display: inline-block;
-        float: none;
-    }
+.index {
+    overflow: hidden;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
+.name {
+    float: left;
 }
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 0.2fr 1.6fr 1.5fr;
+    grid-template-columns: 1.4fr 2.4fr 1fr; 
+    row-gap: 7%;
+}
+
+.nav-bar {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    font-size: 120%;
+}
+
+.intro {
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+}
+
+.intro-text {
+    font-size: 3rem;
+}
+
+.hola {
+    grid-column: 2 / 4;
+    grid-row:  3 / 4;
+    justify-self: end;
+    align-self: end;
+    font-size: 15rem;
+    line-height: 15rem;
+    margin-right: 10px;
+} 
